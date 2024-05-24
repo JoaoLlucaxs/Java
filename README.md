@@ -37,3 +37,12 @@ Uma fila é uma estrutura de dados que segue o princípio FIFO (First In, First 
 As operações principais em uma fila são enqueue (inserir um elemento no final) e dequeue (remover o elemento do início).
 Além disso, é comum ter uma operação peek para visualizar o elemento no início da fila sem removê-lo.
 As filas são úteis em situações como processamento de tarefas em uma ordem específica, simulação de eventos em sistemas de tempo real e gerenciamento de pedidos em sistemas de atendimento ao cliente.
+
+<h2 id="contribuir">Contribuir 🚀</h2>
+
+Se você quiser contribuir, clone este repositório, crie sua própria branch de trabalho e mãos à obra!
+
+```bash
+git clone https://github.com/JoaoLlucaxs/Logica_Algoritmo_Em_Java.git
+```
+

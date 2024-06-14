@@ -37,7 +37,7 @@ public class Funcoes {
 		sc.close();
 	}
 	
-	public static int verificaMaiorNumero(int a, int b , int c) {
+	public static int verificaMaiorNumero(int a, int b , int c) { // uma função que recebe valores inteiros
 		int retornaMaior;
 		if(a > b && a > c) {
 			return retornaMaior=a;

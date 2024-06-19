@@ -1,0 +1,18 @@
+MEMBROS ESTATICOS
+
+- tAMBÉM SÃO CHAMADOS MEMBROS DE CLASSE = Em oposição a membros e instancia
+
+- São membros que fazem sentido independentemente de objetos. Não precisam de objeto para
+serem chamados.São chamados a partir do próprio nome da classe
+
+-- Aplicações Comuns ?
+	- Classes utilitarias -> ex : Math.sqrt(double)
+	- Declaração de constantes
+
+- Uma classe que possui somente membros estaticos , pode ser uma classe estática também
+	Esta classe não poderá ser instanciada
+	
+	
+	PROBLEMA EXEMPLO: Fazer um programa para ler um valor numerico qualquer, e dai mostrar
+	quanto seria o valor de uma circunferencia e do volume de uma esfera para um raio 
+	daquele valor. Informar também o valor de PI com duas casas decimais

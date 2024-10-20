@@ -3,17 +3,24 @@ package Wrapper;
 public class Boxing_Unboxing {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		/* Tomar cuidado para nÔøΩo usar demais.. perde desempenho
+
+		ESSE TEMA √â BOM SABER
+		POR√âM SABER QUE N√ÉO SE DEVE USAR MUITO
+		POIS A VARIAVEL ACABA PERDENDO MUITO DESEMPENHO
+		AL√âM DE TORNAR LENTA A COLETA NO GARBAGE
+
+		 */
 		
 		
-		// Tomar cuidado para n„o usar demais.. perde desempenho
+		/* PARA UTILIZAR UMA VARIAVEL BOXING N√ÉO H√Å NECESSIDADE DE INSTANCIAR OBJETO
+		Integer x= new Integer(10);
+
+		*/
+		Integer x=10; // DESSA FORMA O JAVA J√Å ENTENDE QUE √â UM BOXING (OBJETO DO TIPO INTEGER)
 		
-		
-		// VocÍ n„o precisa instanciar um objeto 
-		//Integer x= new Integer(10);
-		Integer x=10; // n„o instancio..ele j· entende como objeto..isso È chamado de boxing
-		
-		int i= x; // Unboxing
+		int i= x; // UNBOXING
 		
 		// =========================================================================
 		Integer i1=127;
@@ -21,13 +28,22 @@ public class Boxing_Unboxing {
 		
 		Integer i3=128;
 		Integer i4=128;
-		
+
+		// A SEGUIR VAMOS ENTENDER ALGUMAS COISAS A MAIS:
 		System.out.println(i1 == i2); // true
 		System.out.println(i3 == i4); // false
 		
-		// ???? Porque o primeiro da true e o segundo false?
-		// i1 e i2 est„o apontando para o mesmo objeto (È atÈ 127 a -128)
-		// i3 e i4 est„o apontando para Objeto diferente pois a partir de 128 j· apontam para objetos diferentes
+		/*
+		* PORQUE UM DA TRUE E OUTRO FALSE ?
+		*
+		* = Ambos i1 e i2 recebem o valor 127,
+		* que est√° dentro do intervalo de cache.
+		* Como resultado, o Java reutiliza o mesmo objeto Integer para ambos, e,
+		* portanto, a compara√ß√£o com == retorna true porque i1 e i2 apontam para a mesma inst√¢ncia de Integer.
+		*
+		* J√Å (I3 E I4) -> J√Å √â 128 , ENT√ÉO ELE CRIA A INSTANCIA DE CADA OBJETO E ISSO TORNAM OBJETOS DIFERENTES
+		*
+		* */
 	}
 
 }

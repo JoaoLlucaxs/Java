@@ -3,17 +3,19 @@ package whileLaco;
 public class TesteWhile {
 	public static void main(String[] args) {
 		
-		//while -> tambÈm devolve true ou false
+		/* WHILE (ENQUANTO ALGO FOR ... FA√áA )) -> √â UM BOOLEAN , ELA DEVOLVE SE A SUA PERGUNTA SAIR√Å COMO VERDADEIRA OU FALSA
+		E A PARTIR DISSO TU OPTA EM FAZER ALGO COM BASE NA RESPOSTA
+
+		************** VAMOS AO EXEMPLO ******************
+		*/
 		
+
+		int contador=0; // EU TENHO UMA VARIAVEL QUE INICIA EM 0
 		
-		// Abaixo h· um cÛdigo onde ele verifica se o contador È menor ou igual a 10
-		// Se sim, ele entra e incrementa , quando a verificaÁ„o for false ela sai do laÁo
-		int contador=0;
-		
-		while(contador <= 10) {
-			System.out.println(contador++);
+		while(contador <= 10) { // AQUI ELA VAI PASSAR 10 VEZES NA MESMA PERGUNTA (√â MENOR QUE 10? SIM ? ENT√ÉO ENTRA DENTRO DO CORPO E FAZ ALGO)
+			System.out.println(contador++); // ENTROU AQUI , ++ INCREMENTA ENT√ÉO 0 + 1 = 1.. E ASSIM VOLTA A PERGUNTA
 		}
 		
-		// Isso È muito utilizado quando vocÍ quer ler por exemplo um arquivo: Enquanto tiver dados leia
+		// EXEMPLO 1 - MUITO UTILIZADO QUANDO O PROGRAMA PRECISA LER ARQUIVOS: TEM DADOS? LEIA , CHEGOU NO FINAL DO ARQUIVO (AINDA TEM DADOS? N√ÉO , ENT√ÉO SAIA)
 	}
 }

@@ -1,15 +1,13 @@
 package enums.explicacao2;
 
-import java.io.ObjectInputFilter.Status;
-
 public class Teste {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Pedido pedido=new Pedido();
-		pedido.setNomeCliente("João");
-		pedido.setPedido(StatusPedido.EMITIDO); //TYPE-SAVE(Só compila o que estiver no enum), ver logo em tempo de compilação o erro
+		pedido.setNomeCliente("Joï¿½o");
+		pedido.setPedido(StatusPedido.EMITIDO); //TYPE-SAVE(Sï¿½ compila o que estiver no enum), ver logo em tempo de compilaï¿½ï¿½o o erro
 		pedido.setOrigemPedido(OrigemPedido.BALCAO);
 		
 		System.out.println(pedido.getPedido());
@@ -19,12 +17,12 @@ public class Teste {
 		
 		// Como saber quais constante 
 		for(StatusPedido status: StatusPedido.values()) { //.values() retorna um array de todas as constantes
-			System.out.printf("%d - %s%n",status.ordinal(), status.name()); //0 - EMITIDO mostra a descrição de todos e numero de localização
+			System.out.printf("%d - %s%n",status.ordinal(), status.name()); //0 - EMITIDO mostra a descriï¿½ï¿½o de todos e numero de localizaï¿½ï¿½o
 		}
 		
 		//**********************************************************************************************************
 		
-		// Suponha que você recebe de outro lugar um texto e tem que colocar como enum (converter) - Lembre-se se não tive na classe enum dará erro
+		// Suponha que vocï¿½ recebe de outro lugar um texto e tem que colocar como enum (converter) - Lembre-se se nï¿½o tive na classe enum darï¿½ erro
 		String textoStatus="CANCELADO";
 		StatusPedido status=StatusPedido.valueOf(textoStatus); //"valueof - "valor de:"
 		System.out.println(status.ordinal() +  " - " + status.name());

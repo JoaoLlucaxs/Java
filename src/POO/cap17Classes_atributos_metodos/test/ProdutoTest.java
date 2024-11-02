@@ -1,9 +1,11 @@
-package POO.cap17Classes_atributos_métodos.test;
+package POO.cap17Classes_atributos_metodos.test;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import POO.cap17Classes_atributos_métodos.entities.Produto;
+import POO.cap17Classes_atributos_metodos.entities.Produto;
+
+
 
 public class ProdutoTest {
 

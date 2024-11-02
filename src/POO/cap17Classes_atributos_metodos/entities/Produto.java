@@ -1,4 +1,4 @@
-package POO.cap17Classes_atributos_métodos.entities;
+package POO.cap17Classes_atributos_metodos.entities;
 
 public class Produto {
 	

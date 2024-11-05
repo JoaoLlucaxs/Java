@@ -1,6 +1,6 @@
 package generic;
 
-public class Cliente {
+public class Cliente implements Nomeavel {
     private String razaoSocial;
     private double faturamentoMensal;
 
@@ -31,5 +31,11 @@ public class Cliente {
                 "razaoSocial='" + razaoSocial + '\'' +
                 ", faturamentoMensal=" + faturamentoMensal +
                 '}';
+    }
+
+
+    @Override
+    public String getNome() {
+        return getRazaoSocial();
     }
 }

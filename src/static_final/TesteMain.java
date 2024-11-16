@@ -7,10 +7,11 @@ public class TesteMain {
 		
 		Contador contador=new Contador();
 		
-		// Chamando o m�todo que incrementa
+		// Chamando o m�todo que incrementa
 		contador.incrementar();
-		
-		contador.imprimirContador();
+
+		// Só é possível chamar o método direto sem precisar de instância devido o static
+		Contador.imprimirContador();
 	}
 
 }

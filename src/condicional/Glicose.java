@@ -7,7 +7,7 @@ import java.util.Locale;
 public class Glicose {
 
 	public static void main(String[] args) throws Exception{
-		// TODO Auto-generated method stub
+
 		BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
 		Locale.setDefault(Locale.US);
 		
